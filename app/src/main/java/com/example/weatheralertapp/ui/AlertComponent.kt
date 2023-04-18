@@ -1,10 +1,9 @@
-package com.example.weatheralertapp
+package com.example.weatheralertapp.ui
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
@@ -16,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.CachePolicy
 import coil.request.ImageRequest
+import com.example.weatheralertapp.R
 import com.example.weatheralertapp.data.AlertDetails
 import com.example.weatheralertapp.data.WeatherAlert
 
@@ -26,9 +26,7 @@ fun WeatherAlertComponent(
     Row(
         modifier = Modifier
             .wrapContentSize()
-            .padding(start = 16.dp, top = 16.dp, end = 16.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
+            .padding(start = 16.dp, top = 16.dp, end = 16.dp)
     ) {
         Column(modifier = Modifier.wrapContentSize()) {
             AsyncImage(
@@ -87,8 +85,8 @@ fun WeatherAlertComponentPreview() {
             AlertDetails(
             "23",
             "233",
-            "sdfsd",
-            "ekwjew",
+            "Snow",
+            "Weather alert app",
             "12:00",
                 33
             )
