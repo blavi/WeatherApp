@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeatherAlertApp</string>
+    <string name="start">Start date: %s</string>
+    <string name="end">End date: %s</string>
+    <string name="duration">Duration: %s</string>
+    <string name="sender">Sender: %s</string>
+    <string name="no_alerts">No Alerts Available</string>
+</resources>
